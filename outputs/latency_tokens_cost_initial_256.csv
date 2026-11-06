@@ -1,0 +1,150 @@
+question_id,prompt_version,model_name,start_time,end_time,latency_seconds,response_status,response_state,input_tokens,output_tokens,total_tokens,response_text,valid_json,ollama_total_duration_ns,ollama_load_duration_ns
+Q1,v1,qwen2.5:1.5b,2026-11-05T14:19:53.650674+00:00,2026-11-05T14:19:59.971179+00:00,6.320499,200,success,43,82,125,"Machine learning is a subfield of artificial intelligence that focuses on the development of algorithms and statistical models that allow computer systems to learn and improve from experience without being explicitly programmed. It involves using statistical techniques to give computers the ability to learn and make decisions or predictions based on data. Machine learning can be used for a wide range of tasks, including image and speech recognition, natural language processing, and autonomous vehicles.",False,4256612000,9855700
+Q2,v1,qwen2.5:1.5b,2026-11-05T14:20:01.350349+00:00,2026-11-05T14:20:17.990350+00:00,16.639979,200,success,46,256,302,"Supervised learning and unsupervised learning are two fundamental types of machine learning techniques used in artificial intelligence. Here's a clear explanation of each:
+
+### Supervised Learning
+Supervised learning is a type of machine learning where the algorithm learns from labeled training data. This means that the input data is paired with the correct output, and the algorithm is trained to predict the correct output for new, unseen data. The goal is to build a model that can generalize well to new, similar data. Supervised learning is often used in tasks such as image classification, speech recognition, and natural language processing.
+
+### Unsupervised Learning
+Unsupervised learning, on the other hand, involves training a model on data that does not have any labels or predefined categories. The algorithm is left to find patterns and structure in the data on its own. This type of learning is useful for tasks where the data is unlabeled, such as clustering, anomaly detection, and association rule mining. The goal is to find meaningful patterns or groups within the data without any prior knowledge of what those patterns might be.
+
+### Key Differences
+- **Data Labeling**: Supervised learning requires labeled data, while unsupervised learning does not.
+- **Output**: In supervised learning, the output is a specific label",False,14489572100,10605000
+Q3,v1,qwen2.5:1.5b,2026-11-05T14:20:19.081492+00:00,2026-11-05T14:20:36.871905+00:00,17.790404,200,success,51,256,307,"Overfitting is a phenomenon in machine learning where a model performs exceptionally well on the training data but poorly on unseen data. This occurs when a model is too complex and captures noise in the training data instead of the underlying pattern. Overfitting can be prevented by several techniques:
+
+1. **Regularization**: Adding a penalty term to the loss function, such as L1 or L2 regularization, to discourage the model from fitting the training data too closely.
+
+2. **Early Stopping**: Monitoring the performance on a validation set and stopping the training process when the performance on the validation set starts to degrade.
+
+3. **Data Augmentation**: Generating more training data through techniques like flipping, rotating, or adding noise to existing images or videos.
+
+4. **Model Simplification**: Reducing the complexity of the model by using simpler architectures or reducing the number of parameters.
+
+5. **Cross-Validation**: Using techniques like k-fold cross-validation to ensure that the model's performance is not just poor on the training data but also poor on unseen data.
+
+6. **Pruning**: Removing less important features from the model to reduce its complexity.
+
+7. **Ensemble Methods**: Combining multiple models to reduce the variance of the predictions.
+
+By applying these techniques, the model can be",False,15664097600,6143900
+Q4,v1,qwen2.5:1.5b,2026-11-05T14:20:38.612902+00:00,2026-11-05T14:20:55.451184+00:00,16.838274,200,success,45,256,301,"The attention mechanism in transformers is a key component that allows the model to weigh the importance of different parts of the input sequence during the processing. This mechanism is crucial for understanding the context and relationships between words in a sentence or document, which is essential for tasks like language translation, text summarization, and beyond.
+
+### How Attention Works
+
+1. **Input Representation**: The input sequence is first transformed into a fixed-length vector representation using a linear layer. This vector captures the essence of the input sequence.
+
+2. **Attention Scores**: For each position in the input sequence, the model computes attention scores. These scores are based on the dot product of the input sequence vector and a learned query vector. The query vector is typically the input sequence vector itself, but it can also be a learned vector that captures the context of the current position.
+
+3. **Softmax Function**: The attention scores are then passed through a softmax function to normalize them. This ensures that the attention weights sum up to 1, making them interpretable as probabilities.
+
+4. **Weighted Sum**: The input sequence vector is then weighted by these attention scores. The weighted sum of the input sequence vector gives the final representation of the current position in the sequence.
+
+### Example
+
+Consider a simple transformer model processing a",False,14735131700,9742400
+Q5,v1,qwen2.5:1.5b,2026-11-05T14:20:56.575740+00:00,2026-11-05T14:21:13.064501+00:00,16.488754,200,success,47,256,303,"Precision and recall are two important metrics used in evaluating the performance of a classification model. Here's a clear explanation of each:
+
+1. **Precision**:
+   - Precision measures the proportion of true positive predictions among all positive predictions.
+   - It is calculated as: \( \text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}} \)
+   - Precision is useful when you want to avoid false positives, i.e., when the cost of a false positive is high.
+   - High precision means that most of the positive predictions are correct.
+
+2. **Recall**:
+   - Recall measures the proportion of true positive predictions among all actual positive cases.
+   - It is calculated as: \( \text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} \)
+   - Recall is useful when you want to avoid false negatives, i.e., when the cost of a false negative is high.
+   - High recall means that most of the actual positive cases are correctly identified.
+
+In summary, precision is more concerned with the correctness of the positive predictions, while recall is more concerned with the correctness of",False,14382483300,7740400
+Q1,v2,qwen2.5:1.5b,2026-11-05T14:21:14.131069+00:00,2026-11-05T14:21:25.108092+00:00,10.977016,200,success,65,166,231,"Machine learning is a type of artificial intelligence where computers can learn from data without being explicitly programmed. It's like giving a computer the ability to learn from experience. 
+
+Here's how it works:
+1. The computer is given a large set of data.
+2. It analyzes this data to find patterns and rules.
+3. Using these patterns and rules, the computer can make predictions or decisions.
+
+Machine learning can be used for many things, such as:
+- Predicting what a customer might buy next based on their past purchases.
+- Detecting fraud in financial transactions.
+- Recognizing images or speech in videos or audio.
+- Improving the performance of video games.
+
+The goal of machine learning is to make computers smarter and more efficient at tasks that require learning from experience, without needing to be explicitly programmed for each task.",False,8905002300,7154300
+Q2,v2,qwen2.5:1.5b,2026-11-05T14:21:26.180185+00:00,2026-11-05T14:21:38.829630+00:00,12.649437,200,success,68,207,275,"Supervised learning and unsupervised learning are two main types of machine learning methods used in artificial intelligence. 
+
+Supervised learning involves training a model on labeled data, which means the data has been categorized or labeled beforehand. The goal is to predict the correct category or label for new, unseen data. For example, if you're training a model to recognize cats and dogs, you would have a dataset with images of cats and dogs labeled as such. The model learns from these labeled examples to recognize cats and dogs in new, unlabeled images.
+
+Unsupervised learning, on the other hand, deals with unlabeled data. The model tries to find patterns or structure in the data without any prior knowledge or labels. For instance, if you have a dataset of customer reviews for a product, unsupervised learning could help identify common themes or sentiments in the reviews, even if the reviews themselves are not labeled as positive or negative.
+
+Both types of learning are important because they help machines understand and make sense of the world around them.",False,10571414100,10222300
+Q3,v2,qwen2.5:1.5b,2026-11-05T14:21:39.927006+00:00,2026-11-05T14:21:55.500155+00:00,15.573143,200,success,73,256,329,"Overfitting is a situation in machine learning where a model learns the training data too well, including its noise and outliers. This means the model is too specialized to the training data and performs poorly on new, unseen data. Essentially, it's like trying to fit a square peg into a round hole.
+
+To prevent overfitting, you can use several strategies:
+
+1. **Data Augmentation**: This involves creating more training data by applying transformations to the existing data. For example, you might rotate, flip, or change the brightness of the images in your dataset.
+
+2. **Regularization**: This is a technique that adds a penalty to the loss function to discourage the model from becoming too complex. Common regularization methods include L1 and L2 regularization.
+
+3. **Early Stopping**: This is a method where you stop training the model when the performance on a validation set starts to degrade. This prevents the model from learning the noise in the training data.
+
+4. **Dropout**: This is a regularization technique where a certain percentage of neurons are randomly dropped out during training. This helps prevent overfitting by reducing the complexity of the model.
+
+5. **Model Simplification**: Sometimes, a simpler model can generalize better. This might involve reducing the number of layers or",False,13464494000,7210700
+Q4,v2,qwen2.5:1.5b,2026-11-05T14:21:56.556901+00:00,2026-11-05T14:22:09.161360+00:00,12.60445,200,success,67,197,264,"The attention mechanism in transformers is a technique used to focus on specific parts of the input data when processing it. Imagine you're trying to understand a long text, like a book. Normally, you'd read the whole thing without paying much attention to where you're going. But in the case of a transformer, it's like you're reading the book with a magnifying glass, only focusing on the parts that are most important for understanding the context.
+
+The attention mechanism works by assigning a score to each part of the input data based on how relevant it is to the current task or question. It's like the magnifying glass in the book example. The transformer then uses these scores to decide which parts of the input to pay the most attention to when it's trying to generate the output.
+
+This mechanism helps the transformer to better understand the context and meaning of the input data, which is especially useful when dealing with long sequences of information, like in language translation or summarization tasks.",False,10543760400,4683600
+Q5,v2,qwen2.5:1.5b,2026-11-05T14:22:10.252978+00:00,2026-11-05T14:22:23.187591+00:00,12.934604,200,success,69,203,272,"Precision and recall are two important metrics used in evaluating the performance of a classification model. Here's a simple explanation:
+
+Precision is a measure of the accuracy of the positive predictions. It tells us how many of the items we identified as positive are actually positive. In other words, it measures the proportion of true positives among all the items we predicted as positive. A high precision means that most of the items we predicted as positive are actually positive.
+
+Recall, on the other hand, is a measure of the completeness of the positive predictions. It tells us how many of the actual positive items we identified. It measures the proportion of all the positive items that we correctly identified as positive. A high recall means that most of the actual positive items are correctly identified.
+
+In summary, precision focuses on the accuracy of the positive predictions, while recall focuses on the completeness of the positive predictions. Both are important, and often, we want both high precision and high recall, but it's not always possible to achieve both simultaneously.",False,10889681100,6016900
+Q1,v3,qwen2.5:1.5b,2026-11-05T14:22:24.283561+00:00,2026-11-05T14:22:29.945834+00:00,5.662268,200,success,99,71,170,"{
+  ""answer"": ""Machine learning is a subset of artificial intelligence that involves the use of algorithms and statistical models to enable computers to learn and improve from experience without being explicitly programmed."",
+  ""confidence"": ""high"",
+  ""key_points"": [""subset of artificial intelligence"", ""learning from experience"", ""statistical models"", ""explicit programming""]
+}",True,3599557600,6098400
+Q2,v3,qwen2.5:1.5b,2026-11-05T14:22:31.017336+00:00,2026-11-05T14:22:46.511865+00:00,15.494521,200,success,102,256,358,"{
+  ""answer"": ""Supervised learning and unsupervised learning are two main categories of machine learning techniques."",
+  ""confidence"": ""high"",
+  ""key_points"": [""Supervised learning involves training a model on labeled data, where each example is paired with a correct output. This allows the model to learn patterns and make predictions on new, unseen data. Examples include classification and regression tasks. Unsupervised learning, on the other hand, deals with unlabeled data, where the model must find patterns and structure on its own. Common applications include clustering and association rule learning. Both types of learning are crucial for different types of problems and can be used in combination to enhance model performance."",
+  ""supervised_learning"": ""Training a model on labeled data, where each example is paired with a correct output."",
+  ""unsupervised_learning"": ""Finding patterns and structure in unlabeled data, where the model must learn on its own."",
+  ""classification"": ""A supervised learning task where the model predicts the class label of an input."",
+  ""regression"": ""A supervised learning task where the model predicts a continuous output."",
+  ""clustering"": ""An unsupervised learning task where the model groups similar data points together."",
+  ""association_rule_learning"": ""An",False,13403800700,6541000
+Q3,v3,qwen2.5:1.5b,2026-11-05T14:22:47.607255+00:00,2026-11-05T14:23:01.613412+00:00,14.006151,200,success,107,222,329,"```json
+{
+  ""answer"": ""Overfitting is a phenomenon in machine learning where a model performs extremely well on the training data but poorly on unseen data. This occurs when a model is too complex and captures noise in the training data instead of the underlying pattern. To prevent overfitting, techniques such as regularization, dropout, early stopping, and using simpler models can be employed. Additionally, techniques like cross-validation and early stopping can help in monitoring the model's performance on the validation set and stopping the training process when the performance starts to degrade."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""Overfitting occurs when a model performs well on the training data but poorly on unseen data."",
+    ""Overfitting is due to a model being too complex and capturing noise in the training data."",
+    ""Preventing overfitting can be achieved through techniques such as regularization, dropout, and simpler models."",
+    ""Cross-validation and early stopping are useful for monitoring the model's performance and stopping the training process when overfitting starts to occur.""
+  ]
+}
+```",False,11891892000,6576300
+Q4,v3,qwen2.5:1.5b,2026-11-05T14:23:02.681383+00:00,2026-11-05T14:23:17.914089+00:00,15.232699,200,success,101,254,355,"{
+  ""answer"": ""The attention mechanism in transformers is a key component that allows the model to weigh the importance of different parts of the input sequence during the computation of the output. It enables the model to focus on the most relevant information for making predictions, rather than simply treating all input elements equally."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""Attention mechanism in transformers is a mechanism that allows the model to weigh the importance of different parts of the input sequence during the computation of the output."",
+    ""It enables the model to focus on the most relevant information for making predictions."",
+    ""The attention mechanism is based on the concept of self-attention, which is a mechanism that allows the model to attend to different parts of the input sequence simultaneously."",
+    ""The attention mechanism is implemented using a matrix called the attention weights matrix, which is computed based on the similarity between the input sequence and the query."",
+    ""The attention mechanism is used in various transformer-based models, including language models, machine translation, and natural language processing tasks."",
+    ""The attention mechanism is highly effective in improving the performance of transformer-based models, as it allows the model to better understand the context of the input sequence and make more accurate predictions.""
+  ]
+}",True,13173954700,9306500
+Q5,v3,qwen2.5:1.5b,2026-11-05T14:23:18.967022+00:00,2026-11-05T14:23:29.865215+00:00,10.898187,200,success,103,172,275,"{
+  ""answer"": ""Precision and recall are two important metrics used in evaluating the performance of a classification model. Precision measures the proportion of correctly identified positive instances among all instances identified as positive. It is calculated as the number of true positives divided by the sum of true positives and false positives. Recall, on the other hand, measures the proportion of all actual positive instances that are correctly identified as positive. It is calculated as the number of true positives divided by the sum of true positives and false negatives. In other words, precision focuses on the accuracy of positive predictions, while recall focuses on the accuracy of negative predictions."",
+  ""confidence"": ""high"",
+  ""key_points"": [""Precision: True Positives / (True Positives + False Positives)"", ""Recall: True Positives / (True Positives + False Negatives)""]
+}",True,8816316500,56992300
